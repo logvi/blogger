@@ -79,7 +79,6 @@
     "dev": "babel-node tools/run start  | node ./src/utils/bunyan -o short -l trace",
     "storybook": "start-storybook -p 9001",
     "babel-build": "rimraf lib && babel src --out-dir lib --source-maps inline --copy-files && cp {package.json,README.md} lib/",
-    "deploy": "npm run babel-build && npm publish lib",
-    "parser": "babel-node tools/parser/parseEnv.js"
+    "deploy": "npm run babel-build && npm publish lib"
   }
 }
