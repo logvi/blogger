@@ -21,7 +21,7 @@
   "rules": {
     "no-console": "warn",
     "arrow-body-style": "off",
-    "func-names": "warn",
+    "func-names": "off",
     "no-param-reassign": "warn",
     "react/react-in-jsx-scope": "warn",
     "no-underscore-dangle": "warn",
@@ -31,6 +31,6 @@
     "guard-for-in": "off",
     "no-restricted-syntax": ["error", "WithStatement"],
     "react/forbid-prop-types": "off",
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
   }
 }

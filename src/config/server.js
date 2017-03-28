@@ -5,7 +5,7 @@ export default config.server({
   port: process.env.PORT || 8080,
   host: 'localhost',
   db: {
-    uri: 'mongodb://publicdb.mgbeta.ru:27000/lsk-master',
+    uri: 'mongodb://admin:admin@ds115110.mlab.com:15110/mytest',
   },
   jwt: {
     secret: 'replaceMyPlease',
