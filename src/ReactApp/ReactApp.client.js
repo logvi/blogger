@@ -73,8 +73,8 @@ export default class ReactApp {
   //   return <AppWrapper {...props} children={component} />
   // }
 
-  scrollPositionsHistory = {}
-  currentLocation = null
+  scrollPositionsHistory = {};
+  currentLocation = null;
   @autobind
   async onLocationChange(location) {
     const Root = this.constructor.Html.Root;

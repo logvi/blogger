@@ -4,6 +4,9 @@ import _ from 'lodash';
 import util from 'util';
 import ReactDOM from 'react-dom/server';
 
+require('./bootstrap.g.scss');
+
+
 export class Root extends Component {
   static childContextTypes = {
     history: PropTypes.object.isRequired,
@@ -66,10 +69,10 @@ export default class Html {
   renderHead() {
     const { page } = this.props;
     return `\
-${page.renderHead()}
-${this.renderAssets('css')}
-${this.renderStyle()}
-`;
+      ${page.renderHead()}
+      ${this.renderAssets('css')}
+      ${this.renderStyle()}
+    `;
   }
   renderRoot() {
     const Root = this.constructor.Root;
